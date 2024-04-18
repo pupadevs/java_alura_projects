@@ -8,7 +8,7 @@ import com.projects.catalogo.classes.stringvalueObject.Catalogo.PeliculaID;
 
 public class Pelicula {
 
-    private PeliculaID peliculaID;
+    private final PeliculaID peliculaID;
 
     private Nombre nombre;
 
@@ -22,6 +22,16 @@ public class Pelicula {
         this.nombre = nombre;
         this.categoria = categoria;
         this.duracion = duracion;
+    }
+
+    public static Pelicula createPelicula(Nombre name, Categoria categoria, Duracion duracion){
+            return new Pelicula(
+                    new PeliculaID(),
+                    name,
+                    categoria,
+                    duracion
+
+            );
     }
 
     public PeliculaID getPeliculaID() {
@@ -42,11 +52,11 @@ public class Pelicula {
 
     @Override
     public String toString() {
-        return String.format("| %-10s | %-20s | %-20s | %-20s",
+        return String.format("| %-10s | %-20s | %-20s | %-20s |",
                 this.peliculaID.getUuid().getId(),
-                this.nombre.toString(),
-                this.categoria.toString(),
-                this.duracion.toString());
+                this.nombre.ToString(),
+                this.categoria.ToString(),
+                this.duracion.ToString());
     }
 }
 
