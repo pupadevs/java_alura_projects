@@ -30,14 +30,16 @@ public class MenusCatalogo {
                     """;
 
         do{
-            System.out.println(msg);
+           // System.out.println(msg);
 
-          opcion=  input.nextInt();
+          opcion=  pedirEntero(input, msg);
             switch (opcion){
 
 
                 case 1:
                     CrearPelicula.crearPelicula();
+                    input.nextLine();
+
                     break;
                 case 2: EliminarPelicula.EliminaPelicula();
                 break;
@@ -59,16 +61,17 @@ public class MenusCatalogo {
 
     public static void buscarPeliculas() {
         int seleccion;
-        try{
-            do {
-                System.out.println("""
+        String msg = """
                     Como desea buscar las peliculas?
                     1.- Por titulo.
                     2.- Por Categoria.
                     3.- Por ID.
-                    0.- Volver""");
+                    4.- Volver""";
+        try{
+            do {
+                //System.out.println(msg);
 
-                seleccion = input.nextInt();
+                seleccion = pedirEntero(input,msg);
                 switch (seleccion){
                     case 1:
                         input.nextLine();
@@ -82,7 +85,7 @@ public class MenusCatalogo {
                        Tablero.PrintTablero( BuscarPelicula.buscarPeliculasPorCategoria());
                         break;
                 }
-            }while (seleccion != 0);
+            }while (seleccion != 4);
 
 
         }catch (PeliculaNotFoundException peliculaNotFound){
@@ -98,7 +101,7 @@ public class MenusCatalogo {
         int opcion = 0;
         do {
             try {
-                System.out.print(mensaje);
+                System.out.println(mensaje);
                 opcion = input.nextInt();
             } catch (InputMismatchException e) {
                 System.out.println("Error: Debes introducir un número entero válido.");

@@ -1,10 +1,8 @@
-package com.projects.catalogo.classes.stringvalueObject.Catalogo;
+package com.projects.catalogo.entity.stringvalueObject.Catalogo;
 
 import com.projects.Helper.StringValueObject;
 
 import java.sql.Time;
-import java.util.Date;
-import java.util.Timer;
 
 public class Duracion implements StringValueObject {
 

@@ -1,4 +1,4 @@
-package com.projects.catalogo.classes.stringvalueObject.Catalogo;
+package com.projects.catalogo.entity.stringvalueObject.Catalogo;
 
 
 import com.projects.Helper.Identifier;
@@ -11,6 +11,7 @@ public class PeliculaID implements StringValueObject {
         if (peliculaID == null){
             this.peliculaID =   new Identifier();
         }
+
     }
 
     public PeliculaID(){

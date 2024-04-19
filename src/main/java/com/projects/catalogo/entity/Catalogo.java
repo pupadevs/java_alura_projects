@@ -1,8 +1,7 @@
-package com.projects.catalogo.classes;
+package com.projects.catalogo.entity;
 
-import com.projects.catalogo.classes.stringvalueObject.Catalogo.Nombre;
+import com.projects.catalogo.entity.stringvalueObject.Catalogo.Nombre;
 
-import javax.naming.Name;
 import java.util.ArrayList;
 
 public class Catalogo {

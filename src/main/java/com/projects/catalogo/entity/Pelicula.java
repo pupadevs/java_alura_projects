@@ -1,10 +1,7 @@
-package com.projects.catalogo.classes;
+package com.projects.catalogo.entity;
 
 
-import com.projects.catalogo.classes.stringvalueObject.Catalogo.Categoria;
-import com.projects.catalogo.classes.stringvalueObject.Catalogo.Duracion;
-import com.projects.catalogo.classes.stringvalueObject.Catalogo.Nombre;
-import com.projects.catalogo.classes.stringvalueObject.Catalogo.PeliculaID;
+import com.projects.catalogo.entity.stringvalueObject.Catalogo.*;
 
 public class Pelicula {
 
@@ -15,21 +12,24 @@ public class Pelicula {
     private Categoria categoria;
 
     private Duracion duracion;
+    private Año ano;
 
-    public Pelicula(PeliculaID peliculaID, Nombre nombre, Categoria categoria, Duracion duracion){
+    public Pelicula(PeliculaID peliculaID, Nombre nombre, Categoria categoria, Duracion duracion,Año ano){
 
         this.peliculaID = peliculaID;
         this.nombre = nombre;
         this.categoria = categoria;
         this.duracion = duracion;
+        this.ano = ano;
     }
 
-    public static Pelicula createPelicula(Nombre name, Categoria categoria, Duracion duracion){
+    public static Pelicula createPelicula(Nombre name, Categoria categoria, Duracion duracion, Año ano){
             return new Pelicula(
                     new PeliculaID(),
                     name,
                     categoria,
-                    duracion
+                    duracion,
+                    ano
 
             );
     }
@@ -49,14 +49,16 @@ public class Pelicula {
     public Duracion getDuracion(){
         return this.duracion;
     }
+    public Año getAno(){return this.ano;}
 
     @Override
     public String toString() {
-        return String.format("| %-10s | %-20s | %-20s | %-20s |",
+        return String.format("| %-10s | %-20s | %-20s | %-20s | %-20s |",
                 this.peliculaID.getUuid().getId(),
                 this.nombre.ToString(),
                 this.categoria.ToString(),
-                this.duracion.ToString());
+                this.duracion.ToString(),
+                this.ano.ToString());
     }
 }
 

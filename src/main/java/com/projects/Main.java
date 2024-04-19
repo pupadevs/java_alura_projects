@@ -1,5 +1,6 @@
 package com.projects;
 
+import com.projects.banco.BancoMain;
 import com.projects.catalogo.CatalogoMain;
 
 import java.util.Scanner;
@@ -31,7 +32,7 @@ public class Main {
                 CatalogoMain.main(args);
                 break;
             case 2:
-                System.out.println("aun falta");;
+                BancoMain.main(args);
                 break;
             default:
                 System.out.println("Opción no válida. Saliendo del programa.");

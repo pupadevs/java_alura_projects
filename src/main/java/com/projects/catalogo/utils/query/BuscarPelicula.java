@@ -1,6 +1,6 @@
 package com.projects.catalogo.utils.query;
 
-import com.projects.catalogo.classes.Pelicula;
+import com.projects.catalogo.entity.Pelicula;
 import com.projects.catalogo.exceptions.PeliculaNotFoundException;
 
 

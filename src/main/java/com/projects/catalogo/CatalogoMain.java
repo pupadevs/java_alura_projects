@@ -1,7 +1,7 @@
 package com.projects.catalogo;
 
 import com.projects.catalogo.menus.MenusCatalogo;
-import com.projects.catalogo.classes.Pelicula;
+import com.projects.catalogo.entity.Pelicula;
 
 
 import java.util.ArrayList;
