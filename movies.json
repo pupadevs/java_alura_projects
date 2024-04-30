@@ -1,0 +1,192 @@
+{
+  "7ee22e46-0eda-4466-9f3f-5eb33476c505": {
+    "peliculaID": {
+      "peliculaID": {
+        "id": "7ee22e46-0eda-4466-9f3f-5eb33476c505"
+      }
+    },
+    "Title": {
+      "Title": "Matrix"
+    },
+    "genre": {
+      "Genre": "Action, Drama, Fantasy"
+    },
+    "runTime": {
+      "tiempo": "60 min"
+    },
+    "year": {
+      "year": "1993"
+    }
+  },
+  "86f10acd-5202-4c50-8d59-25597561bd3e": {
+    "peliculaID": {
+      "peliculaID": {
+        "id": "86f10acd-5202-4c50-8d59-25597561bd3e"
+      }
+    },
+    "Title": {
+      "Title": "matrix"
+    },
+    "genre": {
+      "Genre": "pedro"
+    },
+    "runTime": {
+      "tiempo": "120"
+    },
+    "year": {
+      "year": "120"
+    }
+  },
+  "388d1e40-6fba-4e1a-858f-f1a0e5fd1851": {
+    "peliculaID": {
+      "peliculaID": {
+        "id": "388d1e40-6fba-4e1a-858f-f1a0e5fd1851"
+      }
+    },
+    "Title": {
+      "Title": "Rebe"
+    },
+    "genre": {
+      "Genre": "Peter"
+    },
+    "runTime": {
+      "tiempo": "120"
+    },
+    "year": {
+      "year": "1990"
+    }
+  },
+  "36d0a5b6-0428-4480-94ad-74bc22d87cff": {
+    "peliculaID": {
+      "peliculaID": {
+        "id": "36d0a5b6-0428-4480-94ad-74bc22d87cff"
+      }
+    },
+    "Title": {
+      "Title": "Matrix"
+    },
+    "genre": {
+      "Genre": "Action, Drama, Fantasy"
+    },
+    "runTime": {
+      "tiempo": "60 min"
+    },
+    "year": {
+      "year": "1993"
+    }
+  },
+  "ee44ee72-5271-4d2b-8af6-83a8b691e9e3": {
+    "peliculaID": {
+      "peliculaID": {
+        "id": "6bf81bfb-5016-476d-ab27-431aa04fd7f4"
+      }
+    },
+    "Title": {
+      "Title": "hola"
+    },
+    "genre": {
+      "Genre": "pupa"
+    },
+    "runTime": {
+      "tiempo": "6666"
+    },
+    "year": {
+      "year": "777"
+    }
+  },
+  "8b526e5b-f8fb-4ecd-8dcb-e8166ab2856b": {
+    "peliculaID": {
+      "peliculaID": {
+        "id": "8b526e5b-f8fb-4ecd-8dcb-e8166ab2856b"
+      }
+    },
+    "Title": {
+      "Title": "peter y rebe enamorados"
+    },
+    "genre": {
+      "Genre": "tragicomedia amorosa"
+    },
+    "runTime": {
+      "tiempo": "1999999"
+    },
+    "year": {
+      "year": "2021"
+    }
+  },
+  "com.projects.Helper.Identifier@5afa04c": {
+    "peliculaID": {
+      "peliculaID": {
+        "id": "d93c8afe-f43b-4b24-9ed9-06fbf2628940"
+      }
+    },
+    "Title": {
+      "Title": "rebus"
+    },
+    "genre": {
+      "Genre": "brkakdd"
+    },
+    "runTime": {
+      "tiempo": "19990"
+    },
+    "year": {
+      "year": "1202"
+    }
+  },
+  "com.projects.Helper.Identifier@2928854b": {
+    "peliculaID": {
+      "peliculaID": {
+        "id": "3f5ce8d7-3a44-4263-87e9-942d683d2416"
+      }
+    },
+    "Title": {
+      "Title": "Rocky"
+    },
+    "genre": {
+      "Genre": "Drama, Sport"
+    },
+    "runTime": {
+      "tiempo": "120 min"
+    },
+    "year": {
+      "year": "1976"
+    }
+  },
+  "com.projects.Helper.Identifier@30b7c004": {
+    "peliculaID": {
+      "peliculaID": {
+        "id": "1e1d2011-ce6a-4406-94ba-17a852fe549a"
+      }
+    },
+    "Title": {
+      "Title": "The Avengers"
+    },
+    "genre": {
+      "Genre": "Action, Sci-Fi"
+    },
+    "runTime": {
+      "tiempo": "143 min"
+    },
+    "year": {
+      "year": "2012"
+    }
+  },
+  "com.projects.Helper.Identifier@4278a03f": {
+    "peliculaID": {
+      "peliculaID": {
+        "id": "e1659fef-559a-4992-8e15-5979a40afffd"
+      }
+    },
+    "Title": {
+      "Title": "The Bat Man of Shanghai"
+    },
+    "genre": {
+      "Genre": "Animation, Short"
+    },
+    "runTime": {
+      "tiempo": "1 min"
+    },
+    "year": {
+      "year": "2012"
+    }
+  }
+}

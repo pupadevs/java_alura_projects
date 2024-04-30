@@ -2,6 +2,7 @@ package com.projects.banco.utils.command;
 
 import com.projects.banco.entity.Cliente;
 import com.projects.banco.entity.Cuenta;
+import com.projects.banco.entity.stringvalueobject.cliente.ClienteID;
 import com.projects.banco.entity.stringvalueobject.cliente.Email;
 import com.projects.banco.entity.stringvalueobject.cliente.Nombre;
 import com.projects.banco.entity.stringvalueobject.cliente.Password;
@@ -11,8 +12,8 @@ import java.util.Scanner;
 
 public class CreateCliente {
 
-    public static void registarCliete(){
-        Scanner input = new Scanner(System.in);
+    public static void registarCliente( Scanner input){
+       // Scanner input = new Scanner(System.in);
         String nombre;
         String email;
         String password;
@@ -25,8 +26,12 @@ public class CreateCliente {
             System.out.println("escriba su password");
             password = input.nextLine();
         Cliente  cl =  Cliente.CrearCliente(new Nombre(nombre), new Email(email), new Password(password));
-        cl.agregarCuenta(Cuenta.createCuenta());
-            System.out.println(cl.toString());
+            Cuenta cuenta = Cuenta.createCuenta(new ClienteID(String.valueOf(cl.getClienteID().ToString().getId())));
+            if(cl.existNumCuenta(cuenta.getNumeroCuenta().ToString())){
+                cuenta = Cuenta.createCuenta(new ClienteID(String.valueOf(cl.getClienteID().ToString().getId())));
+            }
+        cl.agregarCuenta(cuenta);
+            System.out.println(cl);
 
 
         }catch (EmailIsnotValidException emailIsnotValidException){

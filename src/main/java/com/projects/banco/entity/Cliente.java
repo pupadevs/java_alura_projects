@@ -53,6 +53,15 @@ public class Cliente extends Persona{
         return cuentas;
     }
 
+    public boolean existNumCuenta(String numCuenta){
+        for(Cuenta cuenta: cuentas.values()){
+            if (cuenta.getNumeroCuenta().ToString().equals(numCuenta)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -63,7 +72,8 @@ public class Cliente extends Persona{
         for (Map.Entry<String, Cuenta> entry : cuentas.entrySet()) {
             String idCuenta = entry.getKey();
             Cuenta cuenta = entry.getValue();
-            sb.append("  ID de Cuenta: ").append(idCuenta).append(", ").append(cuenta.getNumeroCuenta().ToString()).append("\n");
+            sb.append("  ID de Cuenta: ").append(idCuenta).append("\n");
+            sb.append("  Num de Cuenta: ").append(cuenta.getNumeroCuenta().ToString());
         }
         return sb.toString();
     }

@@ -23,9 +23,9 @@ public class MenuPrincipal {
             opcion = input.nextInt();
             switch (opcion){
                 case 1:
-                    CreateCliente.registarCliete();
+                    MenuCliente.operacionesCliente();
                     break;
-                case 2:
+                case 2:MenuOperacion.operacionesCuenta();
                     break;
                 case 3:   String[] args = new String[0];
                     Main.main(args);

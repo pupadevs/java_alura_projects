@@ -1,7 +1,7 @@
 package com.projects;
 
 import com.projects.banco.BancoMain;
-import com.projects.catalogo.CatalogoMain;
+import com.projects.movielistcreator.CatalogoMain;
 
 import java.util.Scanner;
 
@@ -37,6 +37,7 @@ public class Main {
             default:
                 System.out.println("Opción no válida. Saliendo del programa.");
         }
+
 
         scanner.close();
     }
