@@ -39,6 +39,14 @@ public class MovieRepository implements MovieRepositoryInterface {
 
     }
 
+    public boolean exist(String id) {
+        if (movelists.get(id) == null) {
+            throw new PeliculaNotFoundException();
+        }
+        return true;
+
+    }
+
     @Override
     public Map<String, Movie> getAllMovies() {
         return movelists;

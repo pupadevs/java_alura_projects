@@ -16,7 +16,7 @@ public class SearchMovieService {
         SearchMovieService.movieRepository = movieRepositoryInterface;
     }
 
-  public static Movie searchMovie(String uuid) {
+  public static Movie searchMovieById(String uuid) {
         setMovieRepositoryInterface(new MovieRepository());
         return  movieRepository.getMovieById(uuid);
   }
@@ -34,17 +34,6 @@ public class SearchMovieService {
         throw new PeliculaNotFoundException();
     }
 
-    public static Movie searchMovieByGenre(String genre) {
-        setMovieRepositoryInterface(new MovieRepository());
-        Map<String, Movie> movies = movieRepository.getAllMovies();
-        for (Map.Entry<String, Movie> entry : movies.entrySet()) {
-            Movie movie = entry.getValue();
-            if (movie.getTitle().getNombre().equalsIgnoreCase(genre)) {
-                return movie; // Devolvemos la película si encontramos una coincidencia
-            }
-        }
-        // Si no se encuentra ninguna película con el título especificado, lanzamos una excepción
-        throw new PeliculaNotFoundException();
-    }
+
 
 }

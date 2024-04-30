@@ -13,11 +13,16 @@ public class UpdateMovieService {
         UpdateMovieService.movieRepository = movieRepositoryInterface;
     }
 
-    public static Movie updateMovie(String uuid, Map<String, String> movie){
+    public static   Movie updateMovie(String uuid, Map<String, String> movie){
         setMovieRepositoryInterface(new MovieRepository());
        // Movie movieData = Movie.fromHashMap(movie);
         Movie movieObject = Movie.fromHashMap(movie);
 
-        return movieRepository.updateMovie(uuid, movieObject);
+        if (movieRepository.exist(uuid)){
+            return movieRepository.updateMovie(uuid, movieObject);
+
+        }
+
+        return movieObject;
     }
 }

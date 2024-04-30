@@ -8,11 +8,13 @@ import com.projects.movielistcreator.exceptions.InvalidApiKeyException;
 import com.projects.movielistcreator.exceptions.PeliculaNotFoundException;
 import com.projects.movielistcreator.exceptions.TitleExistException;
 import com.projects.movielistcreator.infrastructure.userinput.CreateMovieInput;
+import com.projects.movielistcreator.infrastructure.userinput.UpdateMovieInput;
 import com.projects.movielistcreator.utils.command.DeleteMovie;
 import com.projects.movielistcreator.app.service.ShowAllMovieService;
 import com.projects.movielistcreator.app.service.CreateMovie;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Map;
 import java.util.Scanner;
 
 
@@ -56,7 +58,8 @@ public class PrincipalMenu {
                         break;
                     case 5:
                         input.nextLine();
-                        UpdateMovieService.updateMovie("ee44ee72-5271-4d2b-8af6-83a8b691e9e3", CreateMovieInput.movieRequest(input));
+                        Map<String, String> data = UpdateMovieInput.updateRequest(input);
+                       UpdateMovieService.updateMovie(data.get("peliculaID"),data);
                         break;
                     case 6:
                         ApiMenu.menuPlataforma(input);
